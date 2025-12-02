@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Admin — Catálogo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <div class="container" style="padding-top:30px">
+    <h2 class="brand">Painel de <span class="gold">Admin</span></h2>
+
+    <section id="login-section">
+      <h3>Login</h3>
+      <form id="login-form">
+        <input name="username" placeholder="Usuário" required /><br/><br/>
+        <input name="password" type="password" placeholder="Senha" required /><br/><br/>
+        <button type="submit">Entrar</button>
+      </form>
+      <div id="login-msg"></div>
+    </section>
+
+    <section id="admin-section" style="display:none; margin-top:20px">
+      <button id="logout-btn">Logout</button>
+      <h3>Produtos</h3>
+      <div id="products-list"></div>
+
+      <h4>Criar / Editar Produto</h4>
+      <form id="product-form">
+        <input name="id" type="hidden" />
+        <input name="title" placeholder="Título" required/><br/><br/>
+        <textarea name="description" placeholder="Descrição"></textarea><br/><br/>
+        <input name="price" placeholder="Preço" /><br/><br/>
+        <select name="category">
+          <option value="brinco">Brinco</option>
+          <option value="pulseira">Pulseira</option>
+          <option value="tornozeleira">Tornozeleira</option>
+          <option value="colar">Colar</option>
+          <option value="kit">Kit</option>
+          <option value="diversos">Diversos</option>
+        </select><br/><br/>
+        
+        <div style="border: 1px solid rgba(212,175,55,0.2); padding: 15px; border-radius: 8px; margin: 10px 0;">
+          <label style="display: block; margin-bottom: 10px; font-weight: 600;">Imagem do Produto</label>
+          
+          <div style="margin-bottom: 10px;">
+            <input type="file" id="image-file" accept="image/*" style="margin-top: 5px; display: block; width: 100%;" />
+            <button type="button" id="upload-btn" style="margin-top: 10px; padding: 8px 16px; background: #3498db; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: 600;">Fazer Upload</button>
+            <span id="upload-status" style="margin-left: 10px; display: inline-block;"></span>
+          </div>
+          
+          <div style="margin-top: 15px;">
+            <strong>URL da imagem (preenchida automaticamente após upload):</strong>
+            <input name="image" id="image-input" placeholder="/images/nome-da-imagem.jpg" readonly style="margin-top: 5px; width: 100%; padding: 8px; background: rgba(255,255,255,0.1);" />
+          </div>
+          
+          <div id="image-preview" style="margin-top: 15px; display: none;">
+            <strong>Preview:</strong><br/>
+            <img id="preview-img" src="" alt="Preview" style="max-width: 200px; max-height: 200px; margin-top: 10px; border-radius: 8px; border: 1px solid rgba(212,175,55,0.2);" />
+          </div>
+        </div>
+        
+        <button type="submit">Salvar</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>

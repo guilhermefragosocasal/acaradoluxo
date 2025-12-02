@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Produto — Lux</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Lux<span class="gold">.</span></h1>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="product-detail" class="product-detail">
+      <a href="/" class="back-btn">← Voltar</a>
+      <div id="loading" style="text-align: center; padding: 40px; color: var(--muted);">
+        Carregando produto...
+      </div>
+      <div id="error" style="display: none; text-align: center; padding: 40px; color: #e74c3c;">
+        Produto não encontrado.
+      </div>
+      <div id="content" style="display: none;">
+        <img id="product-image" src="" alt="" />
+        <div class="category" id="product-category"></div>
+        <h1 id="product-title"></h1>
+        <div class="price" id="product-price"></div>
+        <div class="description" id="product-description"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Lux — Catálogo</div>
+  </footer>
+
+  <script src="/js/product.js"></script>
+</body>
+</html>
+

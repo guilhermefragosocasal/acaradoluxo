@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: catalogo-lux
+    env: node
+    plan: free
+    buildCommand: npm install && npm run init-db
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: ADMIN_USERNAME
+        value: admin
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: ALLOWED_ORIGINS
+        value: https://catalogo-lux.onrender.com
+
