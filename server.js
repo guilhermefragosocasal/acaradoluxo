@@ -21,7 +21,7 @@ app.use(express.urlencoded({ extended: true }));
 // CORS configurado para produção
 const allowedOrigins = process.env.ALLOWED_ORIGINS 
   ? process.env.ALLOWED_ORIGINS.split(',') 
-  : ['http://localhost:3000', 'http://localhost:3001'];
+  : ['https://acaradoluxo.onrender.com', 'https://acaradoluxo.onrender.com/admin.html'];
 
 app.use(cors({
   origin: (origin, callback) => {
