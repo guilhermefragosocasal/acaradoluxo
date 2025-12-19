@@ -1,0 +1,183 @@
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
+  min-height: 100vh;
+}
+
+.bg-black {
+  background-color: #050505 !important;
+}
+
+.bg-dark {
+  background-color: #0f0f0f !important;
+}
+
+.text-gold {
+  color: #d4af37 !important;
+}
+
+.text-gold:hover {
+  color: #f0c674 !important;
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #d4af37 0%, #b8941f 50%, #8b6914 100%);
+  border: none;
+  color: #000;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, #f0c674 0%, #d4af37 50%, #b8941f 100%);
+  color: #000;
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+  transform: translateY(-2px);
+}
+
+.btn-outline-gold {
+  border: 2px solid #d4af37;
+  color: #d4af37;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+  background: linear-gradient(135deg, #d4af37, #b8941f);
+  border-color: #d4af37;
+  color: #000;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.border-gold {
+  border-color: #d4af37 !important;
+}
+
+.border-gold-top {
+  border-top: 2px solid #d4af37;
+}
+
+.navbar-brand {
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3rem;
+  background: linear-gradient(135deg, #d4af37, #f0c674);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar {
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.product-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  background: linear-gradient(145deg, #1a1a1a 0%, #0f0f0f 100%);
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(212, 175, 55, 0.25), 0 0 0 1px rgba(212, 175, 55, 0.3);
+  border-color: #d4af37;
+}
+
+.product-img {
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.1);
+}
+
+.product-placeholder {
+  height: 240px;
+  background: linear-gradient(135deg, 
+    rgba(212, 175, 55, 0.1) 0%, 
+    rgba(212, 175, 55, 0.05) 50%, 
+    transparent 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  color: #b0b0b0;
+  line-height: 1.6;
+}
+
+.whatsapp-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 20px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #25d366, #1ebe5d);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+  z-index: 999;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.whatsapp-button span {
+  font-size: 0.95rem;
+}
+
+.whatsapp-button:hover {
+  background: linear-gradient(135deg, #1ebe5d, #25d366);
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.5);
+}
+
+footer {
+  background: linear-gradient(180deg, transparent 0%, rgba(212, 175, 55, 0.05) 100%);
+  margin-top: 4rem;
+  padding: 2rem 0 !important;
+}
+
+.display-5, .display-6 {
+  background: linear-gradient(135deg, #d4af37, #f0c674);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 576px) {
+  .product-img,
+  .product-placeholder {
+    height: 180px;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+}
+
+
