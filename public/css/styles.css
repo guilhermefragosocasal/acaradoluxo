@@ -1,0 +1,107 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.bg-black {
+  background-color: #050505 !important;
+}
+
+.text-gold {
+  color: #f0c674 !important;
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #f0c674, #b8871a);
+  border: none;
+  color: #121212;
+  font-weight: 600;
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, #ffdd8a, #c99624);
+  color: #000;
+}
+
+.btn-outline-gold {
+  border-color: #f0c674;
+  color: #f0c674;
+}
+
+.btn-outline-gold:hover {
+  background-color: #f0c674;
+  color: #000;
+}
+
+.border-gold {
+  border-color: #f0c674 !important;
+}
+
+.border-gold-top {
+  border-top: 1px solid #f0c674;
+}
+
+.navbar-brand {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.product-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+  border-color: #f0c674;
+}
+
+.product-img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.product-placeholder {
+  height: 220px;
+  background: radial-gradient(circle at 0 0, rgba(240, 198, 116, 0.15), transparent 60%),
+    radial-gradient(circle at 100% 100%, rgba(240, 198, 116, 0.05), transparent 60%);
+}
+
+.whatsapp-button {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background-color: #25d366;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.whatsapp-button span {
+  font-size: 0.9rem;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe5d;
+  color: #fff;
+}
+
+@media (max-width: 576px) {
+  .product-img,
+  .product-placeholder {
+    height: 180px;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+}
+
+
